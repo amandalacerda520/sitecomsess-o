@@ -4,227 +4,45 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>AgroLacerda - Trigo e Soja</title>
-    <link rel="stylesheet" href="style.css">
+    <title>agroLacerda</title>
 </head>
 
 <body id="inicio">
 
     <header class="cabecalho">
-
         <div class="cabecalho-marca">
 
-            <img src="img/logo.jpeg" alt="Logo AgroLacerda" class="cabecalho-imagem">
+            <img src="imagens/logo.jpg"
+                 alt="Logo agroLacerda"
+                 class="cabecalho-imagem">
 
             <div>
-                <h2 class="cabecalho-subtitulo">Trigo & Soja</h2>
-                <h1 class="cabecalho-titulo">AgroLacerda</h1>
+                <p class="cabecalho-subtitulo">trigo e soja</p>
+                <h1 class="cabecalho-titulo">agroLacerda</h1>
             </div>
 
         </div>
 
         <nav>
             <ul class="cabecalho-lista">
-
                 <li class="cabecalho-lista-item">
-                    <a href="#Trigo">Trigo</a>
+                    <a href="#soja">soja</a>
                 </li>
 
                 <li class="cabecalho-lista-item">
-                    <a href="#soja">Soja</a>
+                    <a href="#trigo">trigo</a>
                 </li>
 
                 <li class="cabecalho-lista-item">
                     <a href="#contato">Contato</a>
                 </li>
-
             </ul>
         </nav>
 
         <button class="botao-tema" id="botao-tema" type="button">
             🌙 Tema
         </button>
-
     </header>
 
-    <main>
-
-        <section class="descricao" id="soja">
-            <h2>Soja</h2>
-        </section>
-
-        <section class="secao">
-
-            <div class="texto">
-
-                <p>
-                    A soja (Glycine max) é uma das oleaginosas mais importantes do mundo,
-                    destacando-se como uma das principais commodities agrícolas devido ao
-                    seu alto teor de proteína e óleo. Ela é amplamente utilizada na
-                    alimentação animal (farelo), na nutrição humana e na produção de
-                    biocombustíveis (biodiesel).
-                </p>
-
-                <p>
-                    Alimentação Animal: Cerca de 75% da soja global é transformada em
-                    farelo para ração de aves, suínos e bovinos. Óleo de Cozinha:
-                    Utilizado no dia a dia para cozinhar e na indústria de alimentos
-                    processados. Biodiesel: Importante matéria-prima para a matriz
-                    energética renovável. Consumo Humano: Base para alimentos como tofu,
-                    leite de soja, shoyu (molho de soja) e proteína texturizada.
-                    Saúde: Contém isoflavonas, compostos que auxiliam na redução dos
-                    sintomas da menopausa e na saúde óssea.
-                </p>
-
-            </div>
-
-            <div class="imagem">
-
-                <img src="img/soja-.jpg" alt="Plantação de soja">
-                <img src="img/soja.jpg" alt="Soja">
-
-            </div>
-
-        </section>
-
-        <section class="descricao" id="Trigo">
-            <h2>Trigo</h2>
-        </section>
-
-        <section class="secao">
-
-            <div class="texto">
-
-                <p>
-                    O trigo (Triticum aestivum) é um dos cereais mais importantes do mundo,
-                    sendo utilizado principalmente na produção de farinha e de diversos
-                    alimentos. Ele possui grande importância na agricultura e na
-                    alimentação humana.
-                </p>
-
-                <p>
-                    Alimentação Humana: O trigo é utilizado na produção de pães, massas,
-                    bolos, biscoitos e outros alimentos. Farinha: A farinha de trigo é
-                    um dos principais produtos obtidos a partir do grão. Alimentação
-                    Animal: O trigo e seus derivados também podem ser utilizados na
-                    alimentação de animais. Economia: A produção de trigo possui grande
-                    importância econômica para diversos países e agricultores.
-                </p>
-
-            </div>
-
-            <div class="imagem">
-
-                <img src="img/trigo-.jpg" alt="Plantação de trigo">
-                <img src="img/trigo.png" alt="Trigo">
-
-            </div>
-
-        </section>
-
-        
-             <section class="fale-conosco" id="contato">
-
-                <h2>Contato</h2>
-    
-                <p>
-                    Preencha os campos abaixo para entrar em contato.
-                </p>
-    
-                <form
-                    id="formulario-contato"
-                    action="https://formsubmit.co/ajax/vladismara@gmail.com"
-                    method="post"
-                >
-    
-                    <input
-                        type="hidden"
-                        name="_subject"
-                        value="Nova mensagem do site Trigo e Soja"
-                    >
-    
-                    <input
-                        type="hidden"
-                        name="_template"
-                        value="table"
-                    >
-    
-                    <label for="nome">Nome:</label>
-    
-                    <input
-                        type="text"
-                        id="nome"
-                        name="Nome"
-                        placeholder="Digite seu nome completo"
-                        required
-                    >
-    
-                    <label for="telefone">Telefone:</label>
-    
-                    <input
-                        type="tel"
-                        id="telefone"
-                        name="Telefone"
-                        placeholder="(99) 9 9999-9999"
-                        maxlength="16"
-                        required
-                    >
-    
-                    <label for="email">E-mail:</label>
-    
-                    <input
-                        type="email"
-                        id="email"
-                        name="email"
-                        placeholder="exemplo@email.com"
-                        required
-                    >
-    
-                    <label for="mensagem">Mensagem:</label>
-    
-                    <textarea
-                        id="mensagem"
-                        name="Mensagem"
-                        rows="6"
-                        placeholder="Escreva sua mensagem aqui!"
-                        required
-                    ></textarea>
-    
-                    <button type="submit">
-                        Enviar
-                    </button>
-    
-                </form>
-    
-                <p
-                    id="resposta-formulario"
-                    class="aviso-formulario"
-                    aria-live="polite"
-                ></p>
-    
-            </section>
-      
-    </main> <!-- COLOCAR O MAIN ABAIXO DA SECTION -->
-
-
-    <footer id="fim">
-        <div class="texto">
-            <p>
-                <strong> Desenvolvido por: </strong>
-                <em> Amanda Lacerda</em> <br>
-                WhatsApp: (43) 9 9999-8888 | amanda.oliveira.lacerda@escola.pr.gov.br
-            </p>
-        </div>
-    </footer>
-    <!-- acrescentar o voltar  -->
-    <a href="#inicio" class="voltar" aria-label="Voltar ao início"> ⬆ </a>
-
-    <script src="script.js"></script>
-
-        </section>
-
-    </main>
-
 </body>
-
 </html>
